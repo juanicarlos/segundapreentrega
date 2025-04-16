@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+}
+
+header {
+    padding: 10px 20px;
+    text-align: initial;
+    border-bottom: 1px solid white;
+}
+
+.logo{
+width: 400px;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 10px;
+    text-align: center;
+}
+
+a{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+
+}
+a:hover{
+    color: aquamarine;
+}
+.boton {
+    background-color: aquamarine;
+    color: black;
+    font-weight: 650;
+    border: none;
+    padding: 10px 20px;
+    font-size: 2;
+}
+.banner {
+    background-image: url("../img.urban/banner\ 2.jpg");
+    height: calc(60vh - 100px);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bannercontenido h2 {
+    font-size:  2rem;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.productos{
+    text-align: center;
+    margin: 10vh;
+    border-bottom: 1px solid black ;
+}
+
+.productos h3{    
+   color: aquamarine;
+   text-transform: uppercase;
+   font-size: 3rem;
+}
+
+.productos p
+{
+    padding: 10px;
+    color: white;
+    font-size: 3rem;
+}
+
+.contendordestock
+{
+    display:grid;
+    grid-template-columns: repeat(1fr,1fr);
+    gap: 20px;
+}
+
+.productos
+{
+   border: 3px solid white;
+   border-radius:  5px;
+   padding: 20px; 
+   text-align: center ;
+}
+.stock{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    border: 1px solid white;
+    padding: 20px;
+    box-shadow: 0px 2px 4px thistle (1, 0, 0, 0.2);
+    margin: 10px;
+}
+
+.stock img{
+    max-width: 100%;
+}
+
+
+.stock p {
+   margin: 10px 0;
+}
+
+.stock button{
+    background-color: thistle;
+    color: #000000;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: progress;
+    margin-top: 10px;
+}
+.stock button:hover  {
+    background-color:rgb(189, 124, 189) ;
+}
+
+.footer h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+ 
+
+main {
+    margin: 20px;
+    padding: 20px;
+}
+.footer {
+    background-color: #d49898;
+    color: thistle;
+    padding: 20px 0;
+}
+
+h1,h2{
+    margin: 20px 0px;
+    text-decoration: underline;
+    text-align: center;
+    color: white;
+}
+
+p{
+    color: white;
+}
+
+
+footer{
+    margin: 20px;
+    padding: 20px;
+    border-top: 1px solid white;
+    text-align: center;
+    color:white;
+}
+
+/*tienda*/
+.productos{
+    margin: 20;
+    border: 4px solid white;
+    border-radius: 10px;
+    
+}
+
+.imgproductos{
+    display: block;
+    width: 100%;
+    height: auto;
+
+}
+
+.productos p {
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+form{
+ margin-top: 20px;
+}
+
+label {
+ display: block;
+ margin-bottom: 5px;
+ color: white;
+ font-weight: bold;
+}
+
+input[type="text"],textarea {
+ width: 75%;
+ padding: 10px;
+ border: 3px solid white;
+ font-size: 14px;
+ margin-bottom: 15px;
+ display: block;
+}
+.btnformulario{
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 15px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+@media (max-width:1023px){
+    header {
+        height: auto;
+        flex-direction: column;
+        text-align: center;
+    }
+
+
+    header button{
+    display: none;
+   }
+    .productos
+   {margin: 5vh;
+    font-size: 2rem;
+    }
+      .contendordestock {
+      grid-template-columns: 1fr 1fr;
+    }
+      .bannercontenido {
+      font-size: 2.5rem;
+    } 
+     footer{
+    flex-direction: column;
+    text-align: center;
+    }
+}
+@media (max-width:768px) {
+    .contendordestock {
+        grid-template-columns: 1fr;
+   }
+}
