@@ -1,0 +1,63 @@
+.productos {
+  text-align: center;
+  margin: 10vh;
+  border-bottom: 1px solid $color-negro;
+
+  h3 {
+    color: aquamarine;
+    text-transform: uppercase;
+    font-size: 3rem;
+  }
+
+  p {
+    padding: 10px;
+    color: $color-blanco;
+    font-size: 3rem;
+  }
+}
+
+.contendordestock {
+  display: grid;
+  grid-template-columns: repeat(1fr, 1fr);
+  gap: 20px;
+}
+
+.productos {
+  border: 3px solid $color-blanco;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+}
+
+.stock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $color-negro;
+  border: 1px solid $color-blanco;
+  padding: 20px;
+  box-shadow: 0px 2px 4px thistle;
+  margin: 10px;
+
+  img {
+    max-width: 100%;
+  }
+
+  p {
+    margin: 10px 0;
+  }
+
+  button {
+    background-color: thistle;
+    color: #000000;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: progress;
+    margin-top: 10px;
+
+    &:hover {
+      background-color: rgb(189, 124, 189);
+    }
+  }
+}

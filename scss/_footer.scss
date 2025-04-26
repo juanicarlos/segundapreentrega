@@ -1,0 +1,35 @@
+.footer h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+main {
+    margin: 20px;
+    padding: 20px;
+}
+
+.footer {
+    background-color: #d49898;
+    color: thistle;
+    padding: 20px 0;
+}
+
+h1,
+h2 {
+    margin: 20px 0px;
+    text-decoration: underline;
+    text-align: center;
+    color: $color-blanco;
+}
+
+p {
+    color: $color-blanco;
+}
+
+footer {
+    margin: 20px;
+    padding: 20px;
+    border-top: 1px solid $color-blanco;
+    text-align: center;
+    color: $color-blanco;
+}
